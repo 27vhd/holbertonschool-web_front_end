@@ -64,56 +64,9 @@
     --section-footer-padding: 3rem 0 0;
     --section-footer-align: center;
 
-    /* Header
-    ============================= */
+    /** HEADER **/
+    --header-padding: 4rem 0 0;
 
-.header {
-  padding: var(--header-padding);
-  position: relative;
-  z-index: 3;
-  background: transparent;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header .menu-icon {
-  cursor: pointer;
-  padding: 2.5rem;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: var(--color-white);
-  display: block;
-  width: 2rem;
-  height: .2rem;
-  position: relative;
-  transition: background .2s ease-out;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: var(--color-white);
-  transition: all .2s ease-out;
-}
-
-.header .menu-icon .navicon:before {
-  top: .7rem;
-}
-
-.header .menu-icon .navicon:after {
-  top: -.7rem;
-}
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
 
@@ -368,6 +321,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .header .menu-icon {
+    cursor: pointer;
+    padding: 2.5rem;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: var(--color-white);
+    display: block;
+    width: 2rem;
+    height: .2rem;
+    position: relative;
+    transition: background .2s ease-out;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--color-white);
+    transition: all .2s ease-out;
+  }
+
+  .header .menu-icon .navicon:before {
+    top: .7rem;
+  }
+
+  .header .menu-icon .navicon:after {
+    top: -.7rem;
   }
 
   /* Footer
